@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import datetime
 import time 
 import json
-apikey = "4b6c08e1d3feeee9b493d38d895705b6"
+apikey = "your_api_key"
 category='business'
 dates=pd.date_range(start="2020-09-12",end='2023-11-11')
 

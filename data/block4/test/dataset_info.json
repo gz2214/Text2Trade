@@ -1,0 +1,20 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "Date": {
+      "dtype": "timestamp[ns, tz=US/Eastern]",
+      "_type": "Value"
+    },
+    "Title": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "Label": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

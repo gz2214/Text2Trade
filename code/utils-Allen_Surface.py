@@ -23,22 +23,25 @@ def pre_stock(path):
     # save as csv
     daily.to_csv('../data/daily_price_movement.csv', index=False)
 
-def create_dataset(data, lookback):
+def create_dataset(data, lookback, trend=False):
     '''
     This function creates a dataset for time series forecasting, with a rolling window of lookback. 
-    Note that the first column need to be the daily price movement
-    
-    Parameters
-    data: a 2D numpy array with shape (# of days, # of features)
-    lookback: an integer of how many trading days to lookback to
+    The setup of labels depends on the purpose of the model. It can be a period in the future or a single day in the future
+    trend: if True, y label becomes boolean, indicating whether the price goes up (1) or down (0)
+    Note that the first column need to be the daily market price
     '''
-    assert type(data) == np.ndarray and len(data.shape) == 2, 'Input data needs to be a 2D numpy array'
-
     n_data, n_feat = data.shape
-    loop = n_data - lookback - 1
-    X = np.empty((loop, lookback, n_feat))
-    y = np.empty((loop, lookback, 1))
-    data = data[1:]
+    if trend:
+        loop = n_data - lookback - 1
+        X = np.empty((loop, lookback, n_feat))
+        y = np.empty((loop, lookback, 1))
+        price_trend = (data[1:, 0] > data[:-1, 0]).astype(int)
+        data = data[1:]
+        data[:, 0] = price_trend
+    else:
+        loop = n_data - lookback
+        X = np.empty((n_data-lookback, lookback, n_feat))
+        y = np.empty((n_data-lookback, lookback, 1))
     for i in range(loop):
         feature = data[i:i+lookback]
         target = data[i+1:i+lookback+1, 0].reshape(-1,1)

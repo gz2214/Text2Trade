@@ -2,7 +2,7 @@ import optuna
 import optuna.visualization as vis
 from train import train_model
 
-def objective(trial, norm_train, norm_val):
+def objective(trial, data):
     params = {
         'lookback' : trial.suggest_int("lookback", 5, 60, step=5),
         'lr' : trial.suggest_float("lr", 1e-5, 1e-1, log=True),
@@ -11,7 +11,7 @@ def objective(trial, norm_train, norm_val):
         'dropout_rate' : trial.suggest_float("dropout_rate", 0.2, 0.5)
     }
 
-    val_loss, _ = train_model(params, norm_train, norm_val, n_epochs=500, baseline=False) # here we don't need the optimal state
+    val_loss, _ = train_model(params, data, n_epochs=500, baseline=False)
 
     return val_loss
 
@@ -28,9 +28,17 @@ def study_early_stop(study, trial):
     if all((abs(v - best_value) < threshold) or (v > best_value) for v in values):
         study.stop()
 
-def tune_model(norm_train, norm_val, trend, baseline=False):
+def tune_model(data, baseline=False, best_params=None):
     study = optuna.create_study(direction="minimize")
-    study.optimize(lambda trial: objective(trial, norm_train, norm_val, trend=trend), n_trials=200, callbacks=[study_early_stop])
+    if best_params: # If this is not the first block, then initialize BayesOpt with the best_params from the previous block
+        study.enqueue_trial({
+            'lookback': best_params['lookback'],
+            'lr': best_params['lr'],
+            'n_nodes': best_params['n_nodes'],
+            'n_layers': best_params['n_layers'],
+            'dropout_rate': best_params['dropout_rate']
+            })
+    study.optimize(lambda trial: objective(trial, data), n_trials=200, callbacks=[study_early_stop])
 
     best_trial = study.best_trial
     best_params = best_trial.params

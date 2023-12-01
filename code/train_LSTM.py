@@ -14,7 +14,7 @@ from models import LSTMModel
 import copy
 
 # the training process should only take in one block at a time
-def train_model(X_train, y_train, model, lr, n_epochs=1000):
+def train_model(X_train, y_train, model, lr, n_epochs=200):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
 # create dataset and time series split for two conditions (tuning process and final model training)

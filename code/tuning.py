@@ -1,19 +1,44 @@
 import optuna
 import optuna.visualization as vis
-from train import train_model
+from train_LSTM import train_model
+from utils import create_dataset
+from models import LSTMModel
+import torch
+import torch.nn as nn
+import numpy as np
 
 def objective(trial, data):
-    params = {
-        'lookback' : trial.suggest_int("lookback", 5, 60, step=5),
-        'lr' : trial.suggest_float("lr", 1e-5, 1e-1, log=True),
-        'n_nodes' : trial.suggest_int("n_nodes", 10, 100, step=10),
-        'n_layers' : trial.suggest_int("n_layers", 1, 3),
-        'dropout_rate' : trial.suggest_float("dropout_rate", 0.2, 0.5)
-    }
+    # Define hyperparameters
+    lookback = trial.suggest_int("lookback", 5, 60, step=5)
+    lr = trial.suggest_float("lr", 1e-5, 1e-1, log=True)
+    n_nodes = trial.suggest_int("n_nodes", 10, 100, step=10)
+    n_layers = trial.suggest_int("n_layers", 1, 3)
+    dropout_rate = trial.suggest_float("dropout_rate", 0.2, 0.5)
 
-    val_loss, _ = train_model(params, data, n_epochs=500, baseline=False)
+    # Create dataset with the current trial's lookback value
+    X_train, X_val, _, y_train, y_val, _ = create_dataset(data, lookback=lookback, window_size=50, val_step=1, test_step=7)
 
-    return val_loss
+    # train then get validation loss
+    model = LSTMModel(input_dim=data.shape[1], n_nodes=n_nodes, output_dim=1, n_layers=n_layers, dropout_rate=dropout_rate)
+    #model.double()
+    blocks = list(X_train.keys())
+    num_blocks = len(blocks)
+    val_loss_list = np.zeros(num_blocks) # list of validation loss for each block
+
+    for i, block in enumerate(blocks): # train block by block
+        _, best_set = train_model(X_train[block], y_train[block], model, lr=lr, n_epochs=500)
+        # evaluate with val set of single block
+        best_set = {key: value.cpu() for key, value in best_set.items()}
+        model.load_state_dict(best_set)
+        model.eval()
+        with torch.no_grad():
+            output = model(X_val[block])
+        
+        loss_fn = nn.BCEWithLogitsLoss()
+        loss = loss_fn(output, y_val[block])
+        val_loss_list[i] = (loss.item())
+
+    return val_loss_list.mean()
 
 def study_early_stop(study, trial):
     # Stop if no improvement in the last N trials

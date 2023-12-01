@@ -19,5 +19,9 @@ class LSTMModel(nn.Module):
     def forward(self, x):
         # output is in format (batch_size, seq_len, output_dim)
         out, _ = self.lstm(x)
-        pred = self.linear(out)
+        last_out = out[:, -1, :]
+
+        # 'last_out' is (batch_size, hidden_size)
+        pred = self.linear(last_out)
+        
         return pred

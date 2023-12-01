@@ -84,8 +84,8 @@ def time_series_split(data, window_size=50, val_step=1, test_step=7):
             block = data[init:init+window_size]
             train[f'block_{i}'] = block[:-val_step]
             val[f'block_{i}'] = block[-val_step:]
-        train[f'block_{n_block}'] = data[n_block*window_size:-val_step]
-        val[f'block_{n_block}'] = data[-val_step:]
+        train[f'block_{n_block-1}'] = data[n_block*window_size:-val_step]
+        val[f'block_{n_block-1}'] = data[-val_step:]
 
         return train, val, test
     

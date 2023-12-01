@@ -10,22 +10,21 @@ import torch
 from sklearn.metrics import roc_curve, auc, precision_score, f1_score, accuracy_score
 import sys
 
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 def main(baseline=False):
     # retreive data
     stock_path = '../data/daily_price_movement.csv'
-    daily = pd.read_csv(stock_path, header=0) # format: 2D array with (str(date), str()
+    daily = pd.read_csv(stock_path, header=0) # format: 2D array with (str(date), str()price_movement) 
     
-    if not baseline: # we can use the dates from news data to split train, val, test
-        pass
-    else:
-        data = daily.to_numpy()[:, 1].reshape(-1, 1)
+    data = daily.to_numpy()[:, 1].reshape(-1, 1)
 
     # train and tune model
-    block_list = list(X_train.keys())
-    best_params = None # initialize hyperparameter to None so the first block will learn them itself
-    for block in block_list:
-        best_params, val_loss = tune_model(data, baseline=baseline, best_params=best_params)
-        print(f'best hyperparameters: {best_params}\nval loss: {np.sqrt(val_loss)}')
+    print('tuning model...')
+    best_params, val_loss = tune_model(data, baseline=baseline)
+    print(f'tuning complete.')
+
+    print(f'best hyperparameters: {best_params}\nval loss: {val_loss}')
     if baseline:
         with open('../../results/best_params_baseline.json', 'w') as f:
             json.dump(best_params, f)
@@ -33,27 +32,25 @@ def main(baseline=False):
         with open('../../results/best_params_sentiment.json', 'w') as f:
             json.dump(best_params, f)
 
-    # train model with best params (remember to set the tuning flag to False)
-    min_test_loss, opt_model_state = train_model(best_params, data, n_epochs=1000, baseline=False, tuning=False)
-    print(f'minimum test BCElogistic: {min_test_loss}')
-
-    # evaluate with test set and plot results
+    # train model with best hyperparameters
     lookback = best_params['lookback']
     lr = best_params['lr']
     n_nodes = best_params['n_nodes']
     n_layers = best_params['n_layers']
     dropout_rate = best_params['dropout_rate']
 
+    X_train, _, X_test, y_train, _, y_test = create_dataset(data, lookback=lookback, window_size=50, val_step=0, test_step=7)
+    min_test_loss, opt_model_state = train_model(best_params, X_train, y_train, n_epochs=1000)
+    print(f'minimum test BCElogistic: {min_test_loss}')
+
     # setup model with the optimized weights and hyperparams
     model = LSTMModel(input_dim=data.shape[1], n_nodes=n_nodes, output_dim=1, n_layers=n_layers, dropout_rate=dropout_rate)
-    model.double()
+    #model.double()
     opt_model_state_cpu = {key: value.cpu() for key, value in opt_model_state.items()}
     model.load_state_dict(opt_model_state_cpu) # load the optimal model state
     model.eval()
 
-    # test set
-    _, _, X_test, _, _, y_test = create_dataset(data, lookback=lookback, test_step=7, dates=None)
-
+    # evaluate model with test set
     with torch.no_grad():
         output = model(X_test)
 
@@ -86,6 +83,14 @@ def main(baseline=False):
     f1 = f1_score(y_true, y_score)
     accuracy = accuracy_score(y_true, y_score)
 
+    results_str = f"Precision: {precision}\nF1 Score: {f1}\nAccuracy: {accuracy}"
+    if baseline:
+        with open('../../results/eval_baseline.txt', 'w') as f:
+            f.write(results_str)
+    else:
+        with open('../../results/eval_sentiment.txt', 'w') as f:
+            f.write(results_str)
+
     # Print the scores
     print(f'Precision: {precision}')
     print(f'F1 Score: {f1}')
@@ -94,5 +99,5 @@ def main(baseline=False):
 if __name__ == '__main__':
     if sys.argv[1].lower() not in ['true', 'false']:
         raise ValueError('Invalid input: please use True or False')
-    trend = sys.argv[1].lower() == 'true'
-    main(baseline=True)
+    baseline = sys.argv[1].lower() == 'true'
+    main(baseline=baseline)

@@ -8,6 +8,7 @@ import torch.nn as nn
 import numpy as np
 
 def objective(trial, data):
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     # Define hyperparameters
     lookback = trial.suggest_int("lookback", 5, 60, step=5)
     lr = trial.suggest_float("lr", 1e-5, 1e-1, log=True)
@@ -21,21 +22,27 @@ def objective(trial, data):
     # train then get validation loss
     model = LSTMModel(input_dim=data.shape[1], n_nodes=n_nodes, output_dim=1, n_layers=n_layers, dropout_rate=dropout_rate)
     #model.double()
+    model.to(device)
     blocks = list(X_train.keys())
     num_blocks = len(blocks)
     val_loss_list = np.zeros(num_blocks) # list of validation loss for each block
 
     for i, block in enumerate(blocks): # train block by block
-        _, best_set = train_model(X_train[block], y_train[block], model, lr=lr, n_epochs=500)
+        # Move data to the selected device
+        X_train_block = X_train[block].to(device)
+        y_train_block = y_train[block].to(device)
+        X_val_block = X_val[block].to(device)
+        y_val_block = y_val[block].to(device)
+        
+        _, best_set = train_model(X_train_block, y_train_block, model, lr=lr, n_epochs=500)
         # evaluate with val set of single block
-        best_set = {key: value.cpu() for key, value in best_set.items()}
         model.load_state_dict(best_set)
         model.eval()
         with torch.no_grad():
-            output = model(X_val[block])
+            output = model(X_val_block)
         
         loss_fn = nn.BCEWithLogitsLoss()
-        loss = loss_fn(output, y_val[block])
+        loss = loss_fn(output, y_val_block)
         val_loss_list[i] = (loss.item())
 
     return val_loss_list.mean()

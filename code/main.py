@@ -73,9 +73,9 @@ def main(baseline=False):
     plt.title('Receiver Operating Characteristic')
     plt.legend(loc="lower right")
     if baseline:
-        plt.savefig('../../results/roc_baseline.png')
+        plt.savefig('../results/roc_baseline.png')
     else:
-        plt.savefig('../../results/roc_sentiment.png')
+        plt.savefig('../results/roc_sentiment.png')
     plt.show()
 
     # Calculate precision, f1, and accuracy score
@@ -85,10 +85,10 @@ def main(baseline=False):
 
     results_str = f"Precision: {precision}\nF1 Score: {f1}\nAccuracy: {accuracy}"
     if baseline:
-        with open('../../results/eval_baseline.txt', 'w') as f:
+        with open('../results/eval_baseline.txt', 'w') as f:
             f.write(results_str)
     else:
-        with open('../../results/eval_sentiment.txt', 'w') as f:
+        with open('../results/eval_sentiment.txt', 'w') as f:
             f.write(results_str)
 
     # Print the scores

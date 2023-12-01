@@ -18,7 +18,7 @@ def train_model(X_train, y_train, model, lr, n_epochs=200):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
 # create dataset and time series split for two conditions (tuning process and final model training)
-    #print(f'X_train shape, y_train shape: {X_train.shape}, {y_train.shape}')
+    print(f'X_train shape, y_train shape: {X_train.shape}, {y_train.shape}')
     # create dataloader
     batch_size = 10
     loader = data.DataLoader(data.TensorDataset(X_train, y_train), shuffle=False, batch_size=batch_size)

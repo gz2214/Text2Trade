@@ -43,7 +43,7 @@ def objective(trial, data):
         
         loss_fn = nn.BCEWithLogitsLoss()
         loss = loss_fn(output, y_val_block)
-        val_loss_list[i] = (loss.item())
+        val_loss_list[i] = loss.item()
 
     return val_loss_list.mean()
 

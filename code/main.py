@@ -39,10 +39,10 @@ def main(baseline=False):
 
     print(f'best hyperparameters: {best_params}\nval loss: {val_loss}')
     if baseline:
-        with open('../../results/best_params_baseline.json', 'w') as f:
+        with open('../results/best_params_baseline.json', 'w') as f:
             json.dump(best_params, f)
     else:
-        with open('../../results/best_params_sentiment.json', 'w') as f:
+        with open('../results/best_params_sentiment.json', 'w') as f:
             json.dump(best_params, f)
 
     # train model with best hyperparameters

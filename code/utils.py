@@ -79,13 +79,17 @@ def time_series_split(data, window_size=50, val_step=1, test_step=7):
     train, val= dict(), dict()
 
     if val_step != 0:
-        for i in range(n_block-1):
+        for i in range(n_block):
             init = i * window_size
-            block = data[init:init+window_size]
-            train[f'block_{i}'] = block[:-val_step]
-            val[f'block_{i}'] = block[-val_step:]
-        train[f'block_{n_block-1}'] = data[n_block*window_size:-val_step]
-        val[f'block_{n_block-1}'] = data[-val_step:]
+            if init + window_size <= n_data:
+                block = data[init:init + window_size]
+                train[f'block_{i}'] = block[:-val_step]
+                val[f'block_{i}'] = block[-val_step:]
+            else:
+                # Handle the last block which might be smaller
+                block = data[init:]
+                train[f'block_{i}'] = block[:-val_step] if len(block) > val_step else block
+                val[f'block_{i}'] = block[-val_step:] if len(block) > val_step else torch.tensor([])
 
         return train, val, test
     

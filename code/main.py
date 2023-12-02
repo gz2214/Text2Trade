@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from utils import create_dataset, time_series_split
+from utils import create_dataset, time_series_split, tensor_string_to_numpy
 from models import LSTMModel
 from train_LSTM import train_model
 from tuning import tune_model
@@ -9,6 +9,7 @@ import json
 import torch
 from sklearn.metrics import roc_curve, auc, precision_score, f1_score, accuracy_score
 import sys
+import os
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -17,11 +18,23 @@ def main(baseline=False):
     stock_path = '../data/daily_price_movement.csv'
     daily = pd.read_csv(stock_path, header=0) # format: 2D array with (str(date), str()price_movement) 
     
-    data = daily.to_numpy()[:, 1].reshape(-1, 1)
+    if baseline:
+        data = daily.to_numpy()[:, 1].reshape(-1, 1)
+    else:
+        embed_path = '../data/BERT_embedding'
+        files = os.listdir(embed_path)
+        embed = pd.DataFrame(columns=['Date', 'Title_Embedding'])
+        for f in files:
+            embed = pd.concat([embed,pd.read_csv(embed_path+'/'+f, header=0)], ignore_index=True)
+
+        embed['date'] = embed['Date'].apply(lambda x: x.split(' ')[0])
+        embed['Title_Embedding'] = embed['Title_Embedding'].apply(tensor_string_to_numpy)
+        temp = pd.merge(daily, embed, on='date', how='left')
+        data = np.append(temp['price_movement'].to_numpy().reshape(-1, 1), np.vstack(temp['Title_Embedding']), axis=1)
 
     # train and tune model
     print('tuning model...')
-    best_params, val_loss = tune_model(data, baseline=baseline)
+    best_params, val_loss = tune_model(data, n_trails=2, baseline=baseline)
     print(f'tuning complete.')
 
     print(f'best hyperparameters: {best_params}\nval loss: {val_loss}')
@@ -39,14 +52,20 @@ def main(baseline=False):
     n_layers = best_params['n_layers']
     dropout_rate = best_params['dropout_rate']
 
-    X_train, _, X_test, y_train, _, y_test = create_dataset(data, lookback=lookback, window_size=50, val_step=0, test_step=7)
-    min_test_loss, opt_model_state = train_model(best_params, X_train, y_train, n_epochs=1000)
-    print(f'minimum test BCElogistic: {min_test_loss}')
-
-    # setup model with the optimized weights and hyperparams
+    # setup model with the optimized hyperparams
     model = LSTMModel(input_dim=data.shape[1], n_nodes=n_nodes, output_dim=1, n_layers=n_layers, dropout_rate=dropout_rate)
     #model.double()
+    model.to(device)
+
+    X_train, _, X_test, y_train, _, y_test = create_dataset(data, lookback=lookback, window_size=50, val_step=0, test_step=7)
+    X_train = X_train.to(device)
+    y_train = y_train.to(device)
+    min_test_loss, opt_model_state = train_model(X_train, y_train, model, lr=lr, n_epochs=1000)
+    print(f'minimum test BCElogistic: {min_test_loss}')
+
+
     opt_model_state_cpu = {key: value.cpu() for key, value in opt_model_state.items()}
+    model.cpu()
     model.load_state_dict(opt_model_state_cpu) # load the optimal model state
     model.eval()
 

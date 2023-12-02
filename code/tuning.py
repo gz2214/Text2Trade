@@ -60,7 +60,7 @@ def study_early_stop(study, trial):
     if all((abs(v - best_value) < threshold) or (v > best_value) for v in values):
         study.stop()
 
-def tune_model(data, baseline=False, best_params=None):
+def tune_model(data, n_trails=200, baseline=False, best_params=None):
     study = optuna.create_study(direction="minimize")
     if best_params: # If this is not the first block, then initialize BayesOpt with the best_params from the previous block
         study.enqueue_trial({
@@ -70,7 +70,7 @@ def tune_model(data, baseline=False, best_params=None):
             'n_layers': best_params['n_layers'],
             'dropout_rate': best_params['dropout_rate']
             })
-    study.optimize(lambda trial: objective(trial, data), n_trials=200, callbacks=[study_early_stop])
+    study.optimize(lambda trial: objective(trial, data), n_trials=n_trails, callbacks=[study_early_stop])
 
     best_trial = study.best_trial
     best_params = best_trial.params

@@ -5,6 +5,14 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 import torch
 from sklearn.preprocessing import MinMaxScaler
+import re
+
+def tensor_string_to_numpy(tensor_str): # tensor saved as csv will become string, so this function converts them into numpy directly
+    if pd.isna(tensor_str):
+        return np.array([])
+    nums = re.findall(r'[\d.\d]+', tensor_str)
+    nums = [float(num) for num in nums]
+    return np.array([nums])
 
 def pre_stock(path):
     '''
@@ -18,7 +26,7 @@ def pre_stock(path):
     df['Date'] = df['Date']
     diff = df['Open'][1:].to_numpy() - df['Open'][:-1].to_numpy() # compute price movement
     price_movement = (diff > 0).astype(int)
-    daily = pd.DataFrame({'date': df['Date'][1:], 'price_movement': price_movement})
+    daily = pd.DataFrame({'Date': df['Date'][1:], 'price_movement': price_movement})
 
     # save as csv
     daily.to_csv('../data/daily_price_movement.csv', index=False)

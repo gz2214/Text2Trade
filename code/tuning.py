@@ -82,7 +82,7 @@ def tune_model(data, n_trails=200, n_epochs=10, baseline=False, best_params=None
     if baseline:
         history.write_image('../results/optimization_history_baseline.png')
     else:
-        history.write_image('../results/optimization_history_sentiment.png')
+        history.write_image('../results/optimization_history_proposed.png')
 
     # Plot parameter relationship
     importance = vis.plot_param_importances(study)
@@ -90,7 +90,7 @@ def tune_model(data, n_trails=200, n_epochs=10, baseline=False, best_params=None
     if baseline:
         importance.write_image('../results/param_importance_baseline.png')
     else:
-        importance.write_image('../results/param_importance_sentiment.png')
+        importance.write_image('../results/param_importance_proposed.png')
     
     # Plot slice of the parameters
     slice = vis.plot_slice(study, params=['n_layers', 'n_nodes', 'dropout_rate', 'lr'])
@@ -98,7 +98,7 @@ def tune_model(data, n_trails=200, n_epochs=10, baseline=False, best_params=None
     if baseline:
         slice.write_image('../results/param_slice_baseline.png')
     else:
-        slice.write_image('../results/param_slice_sentiment.png')
+        slice.write_image('../results/param_slice_proposed.png')
 
 
     return best_params, best_val_loss

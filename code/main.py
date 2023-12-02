@@ -7,7 +7,7 @@ from train_LSTM import train_model
 from tuning import tune_model
 import json
 import torch
-from sklearn.metrics import roc_curve, auc, precision_score, f1_score, accuracy_score
+from sklearn.metrics import roc_curve, auc, precision_score, f1_score, accuracy_score, average_precision_score
 import sys
 import os
 
@@ -34,7 +34,7 @@ def main(baseline=False):
 
     # train and tune model
     print('tuning model...')
-    best_params, val_loss = tune_model(data, n_trails=2, n_epochs=1, baseline=baseline)
+    best_params, val_loss = tune_model(data, n_trails=100, n_epochs=50, baseline=baseline)
     print(f'tuning complete.')
 
     print(f'best hyperparameters: {best_params}\nval loss: {val_loss}')
@@ -42,7 +42,7 @@ def main(baseline=False):
         with open('../results/best_params_baseline.json', 'w') as f:
             json.dump(best_params, f)
     else:
-        with open('../results/best_params_sentiment.json', 'w') as f:
+        with open('../results/best_params_proposed.json', 'w') as f:
             json.dump(best_params, f)
 
     # train model with best hyperparameters
@@ -60,7 +60,7 @@ def main(baseline=False):
     X_train, _, X_test, y_train, _, y_test = create_dataset(data, lookback=lookback, window_size=50, val_step=0, test_step=7)
     X_train = X_train.to(device)
     y_train = y_train.to(device)
-    min_test_loss, opt_model_state = train_model(X_train, y_train, model, lr=lr, n_epochs=1000)
+    min_test_loss, opt_model_state = train_model(X_train, y_train, model, lr=lr, n_epochs=100)
     print(f'minimum test BCElogistic: {min_test_loss}')
 
 
@@ -72,11 +72,11 @@ def main(baseline=False):
     # evaluate model with test set
     with torch.no_grad():
         output = model(X_test)
-
-    t_pred = output[:, -1, 0].view(-1).numpy()  # select the 1-D output and reshape from (batch_size, sequence_length) to (batch_size*sequence_length, 1)
-
+    t_pred = output[:, 0].view(-1).numpy()  # select the 1-D output and reshape from (batch_size, sequence_length) to (batch_size*sequence_length, 1)
+    print(f't_pred:\n{t_pred}')
     # Calculate true positive and false positive rates
     y_true = y_test[:,0].view(-1).numpy()
+    print(f'y_true:\n{y_true}')
     y_score = t_pred
     fpr, tpr, _ = roc_curve(y_true, y_score)
     roc_auc = auc(fpr, tpr)
@@ -94,24 +94,35 @@ def main(baseline=False):
     if baseline:
         plt.savefig('../results/roc_baseline.png')
     else:
-        plt.savefig('../results/roc_sentiment.png')
+        plt.savefig('../results/roc_proposed.png')
     plt.show()
+    
 
+    # Apply sigmoid function to convert logits to probabilities
+    probabilities = torch.sigmoid(output[:,0].view(-1))
+    print(probabilities)
+    # Convert probabilities to binary labels with a 0.5 threshold
+    threshold = 0.5
+    predictions = (probabilities > threshold).int()
+    print(predictions)
     # Calculate precision, f1, and accuracy score
-    precision = precision_score(y_true, y_score)
-    f1 = f1_score(y_true, y_score)
-    accuracy = accuracy_score(y_true, y_score)
+    precision = precision_score(y_true, predictions)
+    MAP = average_precision_score(y_true, probabilities)
+    f1 = f1_score(y_true, predictions)
+    accuracy = accuracy_score(y_true, predictions)
 
-    results_str = f"Precision: {precision}\nF1 Score: {f1}\nAccuracy: {accuracy}"
+
+    results_str = f"Precision: {precision}\nMean Average Precision: {MAP}\nF1 Score: {f1}\nAccuracy: {accuracy}"
     if baseline:
         with open('../results/eval_baseline.txt', 'w') as f:
             f.write(results_str)
     else:
-        with open('../results/eval_sentiment.txt', 'w') as f:
+        with open('../results/eval_proposed.txt', 'w') as f:
             f.write(results_str)
 
     # Print the scores
     print(f'Precision: {precision}')
+    print(f'MAP: {MAP}')
     print(f'F1 Score: {f1}')
     print(f'Accuracy: {accuracy}')
 

@@ -7,7 +7,7 @@ import torch
 import torch.nn as nn
 import numpy as np
 
-def objective(trial, data):
+def objective(trial, data, n_epochs=10):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     # Define hyperparameters
     lookback = trial.suggest_int("lookback", 5, 60, step=5)
@@ -34,7 +34,7 @@ def objective(trial, data):
         X_val_block = X_val[block].to(device)
         y_val_block = y_val[block].to(device)
         
-        _, best_set = train_model(X_train_block, y_train_block, model, lr=lr, n_epochs=500)
+        _, best_set = train_model(X_train_block, y_train_block, model, lr=lr, n_epochs=n_epochs)
         # evaluate with val set of single block
         model.load_state_dict(best_set)
         model.eval()
@@ -60,7 +60,7 @@ def study_early_stop(study, trial):
     if all((abs(v - best_value) < threshold) or (v > best_value) for v in values):
         study.stop()
 
-def tune_model(data, n_trails=200, baseline=False, best_params=None):
+def tune_model(data, n_trails=200, n_epochs=10, baseline=False, best_params=None):
     study = optuna.create_study(direction="minimize")
     if best_params: # If this is not the first block, then initialize BayesOpt with the best_params from the previous block
         study.enqueue_trial({
@@ -70,7 +70,7 @@ def tune_model(data, n_trails=200, baseline=False, best_params=None):
             'n_layers': best_params['n_layers'],
             'dropout_rate': best_params['dropout_rate']
             })
-    study.optimize(lambda trial: objective(trial, data), n_trials=n_trails, callbacks=[study_early_stop])
+    study.optimize(lambda trial: objective(trial, data, n_epochs), n_trials=n_trails, callbacks=[study_early_stop])
 
     best_trial = study.best_trial
     best_params = best_trial.params

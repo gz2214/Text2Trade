@@ -34,7 +34,7 @@ def main(baseline=False):
 
     # train and tune model
     print('tuning model...')
-    best_params, val_loss = tune_model(data, n_trails=50, n_epochs=50, baseline=baseline)
+    best_params, val_loss = tune_model(data, n_trails=100, n_epochs=50, baseline=baseline)
     print(f'tuning complete.')
 
     print(f'best hyperparameters: {best_params}\nval loss: {val_loss}')

@@ -34,7 +34,7 @@ def main(baseline=False):
 
     # train and tune model
     print('tuning model...')
-    best_params, val_loss = tune_model(data, n_trails=20, n_epochs=100, baseline=baseline)
+    best_params, val_loss = tune_model(data, n_trails=50, n_epochs=50, baseline=baseline)
     print(f'tuning complete.')
 
     print(f'best hyperparameters: {best_params}\nval loss: {val_loss}')
@@ -51,6 +51,7 @@ def main(baseline=False):
     n_nodes = best_params['n_nodes']
     n_layers = best_params['n_layers']
     dropout_rate = best_params['dropout_rate']
+    print(best_params)
 
     # setup model with the optimized hyperparams
     model = LSTMModel(input_dim=data.shape[1], n_nodes=n_nodes, output_dim=1, n_layers=n_layers, dropout_rate=dropout_rate)
@@ -68,10 +69,13 @@ def main(baseline=False):
     model.cpu()
     model.load_state_dict(opt_model_state_cpu) # load the optimal model state
     model.eval()
+    print(model.named_parameters())
+    #print(X_test)
 
     # evaluate model with test set
     with torch.no_grad():
         output = model(X_test)
+    print(output)
     t_pred = output[:, 0].view(-1).numpy()  # select the 1-D output and reshape from (batch_size, sequence_length) to (batch_size*sequence_length, 1)
     print(f't_pred:\n{t_pred}')
     # Calculate true positive and false positive rates

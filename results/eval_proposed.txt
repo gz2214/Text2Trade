@@ -1,0 +1,4 @@
+Precision: 0.625
+Mean Average Precision: 0.5628609796001101
+F1 Score: 0.43478260869565216
+Accuracy: 0.5666666666666667

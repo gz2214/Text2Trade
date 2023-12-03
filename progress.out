@@ -1,0 +1,912 @@
+tuning model...
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6570318818092347
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6173957222037845
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.44340328574180604
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5854190852906969
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5180055290460587
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6280091047286988
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6586891695857049
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6820681691169739
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6650941923260689
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6691603891551495
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6835570067167283
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6626426607370377
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6671948961913586
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6581474641958872
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6342656522989274
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4987047736843427
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.37561506860786015
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.2076907901093364
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.25069510771427306
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.21273854151368143
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5946369138028886
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6134518120023938
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6699194476008415
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6199689567089082
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.3869776904582978
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4666319292038679
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.3879141226410866
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.34798528924584393
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.23402814678847791
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6616759881377221
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6490556478500367
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.42829523086547855
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6058909684419632
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.49525873661041264
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6310447245836258
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6828661991490258
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6761045783758164
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6758834314015176
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6602323237392637
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6469281001223458
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6754520138104756
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6830873396247625
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6812017418444157
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.636842778325081
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6882860124111176
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6788639754056931
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5488494604825974
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6005652695894241
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.607558634877205
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6485651791095735
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6321645095944405
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.663749074190855
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.684668117016554
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6860501930117607
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6634516522288323
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6580451644129223
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6827276527881623
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6810518683865667
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5577751265631782
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6679775372147561
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6638627633452416
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6099233210086823
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6540378242731095
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6088546916842461
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6515156581997872
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6847743093967438
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6581411734223366
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6654438144630855
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6780049085617066
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6671940580010415
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6707051858305931
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.682359440624714
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6821420460939408
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.683722934871912
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6302277386188507
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.49846506781048244
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5234217577510409
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.3759326502680779
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5436186244090397
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.49462999403476715
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4891099601984024
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5188509613275528
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.3475121289491654
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5431831313504113
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5420077607035637
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.40833476036787036
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5176075682044029
+X_train shape, y_train shape: torch.Size([49, 50, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.16506657786667348
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5010599881410599
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.02795969664675795
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.0021719336276873947
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.0012651818527956494
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.021041843527927998
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.007060843257931992
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.0025196776899974794
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.00667728658542425
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.005890263192122803
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 5.819817528794778e-05
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.03965781070291996
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.0012805869220755995
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.0009035879891598598
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.002668853210161615
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.05156286542769522
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6518029183149339
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6150265663862229
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.3894447565078736
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5883776992559433
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4654350817203522
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6052088364958763
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5506103903055192
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5519956022500992
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4768669292330742
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6146954447031021
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6374031686120563
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.619074635207653
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.41588194668293
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6127302994330723
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.3649260484509998
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6125945717096329
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6360876858234406
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5122360974550247
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5100630289978451
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6739971280097962
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6230137745539347
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6429908176263173
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6562322795391083
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6576927502950032
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5867076714833577
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6573168933391571
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6093046545982361
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6789562523365021
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6664405316114426
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6181187987327577
+X_train shape, y_train shape: torch.Size([49, 45, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6864808082580567
+X_train shape, y_train shape: torch.Size([49, 45, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6252243518829346
+X_train shape, y_train shape: torch.Size([49, 45, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6585357546806336
+X_train shape, y_train shape: torch.Size([49, 45, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5645737979147168
+X_train shape, y_train shape: torch.Size([49, 45, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6364082336425781
+X_train shape, y_train shape: torch.Size([49, 45, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.64918552339077
+X_train shape, y_train shape: torch.Size([49, 45, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6569644510746002
+X_train shape, y_train shape: torch.Size([49, 45, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6800016775727272
+X_train shape, y_train shape: torch.Size([49, 45, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6692648336291314
+X_train shape, y_train shape: torch.Size([49, 45, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.682252162694931
+X_train shape, y_train shape: torch.Size([49, 45, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6807202969988186
+X_train shape, y_train shape: torch.Size([49, 45, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6862582355323764
+X_train shape, y_train shape: torch.Size([49, 45, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6875206223792499
+X_train shape, y_train shape: torch.Size([49, 45, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6862543677911163
+X_train shape, y_train shape: torch.Size([43, 45, 1]), torch.Size([43, 1])
+minimum BCElogistic: 0.6658485352993012
+X_train shape, y_train shape: torch.Size([49, 60, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.24966037059202792
+X_train shape, y_train shape: torch.Size([49, 60, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4801614493131638
+X_train shape, y_train shape: torch.Size([49, 60, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.04569380152970553
+X_train shape, y_train shape: torch.Size([49, 60, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.1024212653024329
+X_train shape, y_train shape: torch.Size([49, 60, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.0660086749936454
+X_train shape, y_train shape: torch.Size([49, 60, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.45989080518484116
+X_train shape, y_train shape: torch.Size([49, 60, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.23361516992251077
+X_train shape, y_train shape: torch.Size([49, 60, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.2736105863004923
+X_train shape, y_train shape: torch.Size([49, 60, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.29075499176979064
+X_train shape, y_train shape: torch.Size([49, 60, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.3939867310225964
+X_train shape, y_train shape: torch.Size([49, 60, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4733942300081253
+X_train shape, y_train shape: torch.Size([49, 60, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5111882001161575
+X_train shape, y_train shape: torch.Size([49, 60, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.20965721122920514
+X_train shape, y_train shape: torch.Size([49, 60, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.36293550133705144
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6673521474003792
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6454889953136445
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.42585204243659974
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6067158371210098
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.49013974964618684
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.634052610397339
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6543066203594208
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6357893764972687
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.655820243805647
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.671469082434972
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6742897203399075
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6546489499509335
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6628501042723656
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6675924907128016
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5867909259266323
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6861063648015261
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.678403463959694
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.549218162894249
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6057971894741059
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6120206207036972
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6451305776834488
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6308625683188439
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6679175455123186
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6778088209219277
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6768348209559918
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6618340574204922
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6583866791592704
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6792736381292344
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6474738694727421
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5867634846104516
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.678375667706132
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6332600696219338
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5474011719226838
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6065241247415543
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6330523490905762
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6139014303684235
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6209934055805206
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6779896870255471
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6771085567772389
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6793934322065777
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6887199541553856
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6758875012397767
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6859460555016995
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6804713182151318
+X_train shape, y_train shape: torch.Size([48, 40, 1]), torch.Size([48, 1])
+minimum BCElogistic: 0.641384592652321
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6412191808223725
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6026293502913581
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4487216740846634
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5728668239381578
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4885008931159973
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5439096705781089
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5805032774806023
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6699453286826611
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5766546607017518
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.620510172098875
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6643394879996777
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5438844114542007
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6190776020288468
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5730158487955729
+X_train shape, y_train shape: torch.Size([49, 5, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5836610227823258
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.38376608546823265
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.17300866711884738
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.07844591028988362
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.21520668249577285
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.06429471711162478
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.351558155938983
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4479115642607212
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.08865676549030468
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.18113025296479465
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.09174845386296511
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.07209790833294392
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.10074593108147384
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.06275002546608448
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.08608098649419844
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.11462763482704759
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6763077490031719
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6902656414442592
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.687840672582388
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6834113962948323
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6652545377612115
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6754074342548848
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6762154534459115
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6738205537199975
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6845999166369439
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6816614158451557
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6833586849272252
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6833506844937802
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6912303000688553
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.690908994525671
+X_train shape, y_train shape: torch.Size([49, 15, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6885310245884789
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6727772485464811
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6813901521265507
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6247190058231354
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6377637714147568
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5712703168392181
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6352748453617096
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6791579176982243
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6595687240362168
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6677038023869196
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6811251804232598
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6868651874363423
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6879199095070363
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6865490205585957
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6862722843885423
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6817011632025243
+X_train shape, y_train shape: torch.Size([49, 10, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6263463066683875
+X_train shape, y_train shape: torch.Size([49, 10, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6325469061732293
+X_train shape, y_train shape: torch.Size([49, 10, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5367033928632736
+X_train shape, y_train shape: torch.Size([49, 10, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5495316121313307
+X_train shape, y_train shape: torch.Size([49, 10, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5879348658025265
+X_train shape, y_train shape: torch.Size([49, 10, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4071565713733435
+X_train shape, y_train shape: torch.Size([49, 10, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5288182199001312
+X_train shape, y_train shape: torch.Size([49, 10, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6215072110295297
+X_train shape, y_train shape: torch.Size([49, 10, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.619878424704075
+X_train shape, y_train shape: torch.Size([49, 10, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.46705701284938383
+X_train shape, y_train shape: torch.Size([49, 10, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5920585642258326
+X_train shape, y_train shape: torch.Size([49, 10, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6262638185173274
+X_train shape, y_train shape: torch.Size([49, 10, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6000619489699602
+X_train shape, y_train shape: torch.Size([49, 10, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5222989585664537
+X_train shape, y_train shape: torch.Size([49, 10, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5745384752750397
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6782402932643891
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6547224342823029
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4620152682065964
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6098965048789978
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.49171431362628937
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6326269805431366
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6827184889051648
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6723908048123122
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6752575520012113
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6636787090036603
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6564202391439014
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6767810558279355
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6808006055653095
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6815697982907296
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6487807944417
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6803631067276001
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6698573045432568
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5372859895229339
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6211944431066514
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5262962073087692
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6299709379673004
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6283896631664699
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6783953778445722
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6727192595601083
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6800344590097667
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.676254764944315
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6846711903810502
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6868621228883663
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.683698589541018
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6574231050908566
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6786936722695828
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6558176070451737
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.47006976008415224
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6039309173822404
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4909295052289963
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6300643265247345
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6832717888885074
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6727504752576352
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6770965622531043
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6673579787214596
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6610283628106117
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6778580132457944
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6818682610988618
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6813934326171875
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6560805134475232
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6748454540967942
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6658431872725488
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.49355848431587224
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6060268849134446
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.49181482195854187
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6309593319892883
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.682753754986657
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6722324818372727
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6759708933532238
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6783538477288352
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6722770416074328
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6805518807636367
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6849672507494688
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6864879157394171
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6688120365142822
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6430430114269257
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6658316671848298
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4264703154563904
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5368830859661102
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6320020943880081
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5158756143516964
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6434990713993708
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5257938127550814
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6406173422932625
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.586132804552714
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.515864796936512
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5688470728695393
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5184272088110448
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6333943158388138
+X_train shape, y_train shape: torch.Size([49, 30, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5992167189717293
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6756023176014424
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6886129255096117
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6909677747637034
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6779143702238799
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6736630022525788
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.67081149071455
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6610670000314713
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6639173150062562
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6873718922336896
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6820082701742649
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6843510702252389
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6894842095673085
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6895430520176888
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6868760894984007
+X_train shape, y_train shape: torch.Size([49, 20, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6862507197591993
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6441204100847244
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5085204227103127
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.2925189509987831
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.3181993499398232
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5085717976093292
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.42728257924318314
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6289495825767517
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.46985556185245514
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.3751223333179951
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.3489403381943703
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6469486597925425
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.3964623898267746
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5797703415155411
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.23841773383319378
+X_train shape, y_train shape: torch.Size([48, 40, 1]), torch.Size([48, 1])
+minimum BCElogistic: 0.1716193648055196
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6764886900782585
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.645029965043068
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4290001064538956
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6056086719036102
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4943513095378876
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6296058088541031
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6809753576914469
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6725613348186017
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6765911276969644
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6590700745582581
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.640313552485572
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6775318682193756
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6862243823707104
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6857848569750786
+X_train shape, y_train shape: torch.Size([49, 25, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6158132761716844
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6303020983934403
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6344600528478623
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.07283141501247883
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5736308485269547
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.46226577758789067
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5962010592222214
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5685687197579278
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6022655233740807
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6287498570978642
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.46545703038573266
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6267580565065146
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6529534667730332
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5206950068473816
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.38450269624590877
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.3373776637017727
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6413404107093812
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5957568751441108
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5264143317937852
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6041201591491699
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6319108539157443
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5608443140983582
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5968347787857056
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5603754228601853
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6430843830108643
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6408209519253837
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.531650273501873
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5343084603548051
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6215658962726593
+X_train shape, y_train shape: torch.Size([49, 40, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5254995226860046
+X_train shape, y_train shape: torch.Size([48, 40, 1]), torch.Size([48, 1])
+minimum BCElogistic: 0.5512233398854732
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.6182281613349915
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.5065629810094834
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.07583796493709088
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.43776455819606785
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.45244413744658235
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.36894113942980766
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.33137203678488736
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.346725307777524
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4235471553272671
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.37536629661917686
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.30539667010307314
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.4933395177125931
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.34647094924002886
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.40018272317118114
+X_train shape, y_train shape: torch.Size([49, 35, 1]), torch.Size([49, 1])
+minimum BCElogistic: 0.1990360110998154
+tuning complete.
+best hyperparameters: {'lookback': 35, 'lr': 0.0001174630195099629, 'n_nodes': 100, 'n_layers': 3, 'dropout_rate': 0.39544754507078755}
+val loss: 0.6216595287124316
+X_train shape, y_train shape: torch.Size([754, 35, 1]), torch.Size([754, 1])
+minimum BCElogistic: 0.5833529330790043
+minimum test BCElogistic: 0.5833529330790043
+t_pred:
+[ 0.13990518  0.15944389  0.11087831  0.04506635 -0.01110196 -0.03139096
+ -0.01489944]
+y_true:
+[1. 1. 1. 1. 1. 1. 0.]
+tensor([0.5349, 0.5398, 0.5277, 0.5113, 0.4972, 0.4922, 0.4963])
+tensor([1, 1, 1, 1, 0, 0, 0], dtype=torch.int32)
+Precision: 1.0
+MAP: 0.976190476190476
+F1 Score: 0.8
+Accuracy: 0.7142857142857143

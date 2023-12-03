@@ -34,7 +34,7 @@ def main(baseline=False):
 
     # train and tune model
     print('tuning model...')
-    best_params, val_loss = tune_model(data, n_trails=100, n_epochs=50, baseline=baseline)
+    best_params, val_loss = tune_model(data, n_trails=20, n_epochs=100, baseline=baseline)
     print(f'tuning complete.')
 
     print(f'best hyperparameters: {best_params}\nval loss: {val_loss}')
@@ -57,10 +57,10 @@ def main(baseline=False):
     #model.double()
     model.to(device)
 
-    X_train, _, X_test, y_train, _, y_test = create_dataset(data, lookback=lookback, window_size=50, val_step=0, test_step=7)
+    X_train, _, X_test, y_train, _, y_test = create_dataset(data, lookback=lookback, window_size=50, val_step=0, test_step=30)
     X_train = X_train.to(device)
     y_train = y_train.to(device)
-    min_test_loss, opt_model_state = train_model(X_train, y_train, model, lr=lr, n_epochs=100)
+    min_test_loss, opt_model_state = train_model(X_train, y_train, model, lr=lr, n_epochs=200)
     print(f'minimum test BCElogistic: {min_test_loss}')
 
 

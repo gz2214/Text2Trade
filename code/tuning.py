@@ -17,7 +17,7 @@ def objective(trial, data, n_epochs=10):
     dropout_rate = trial.suggest_float("dropout_rate", 0.2, 0.5)
 
     # Create dataset with the current trial's lookback value
-    X_train, X_val, _, y_train, y_val, _ = create_dataset(data, lookback=lookback, window_size=50, val_step=1, test_step=7)
+    X_train, X_val, _, y_train, y_val, _ = create_dataset(data, lookback=lookback, window_size=50, val_step=10, test_step=30)
 
     # train then get validation loss
     model = LSTMModel(input_dim=data.shape[1], n_nodes=n_nodes, output_dim=1, n_layers=n_layers, dropout_rate=dropout_rate)
@@ -49,7 +49,7 @@ def objective(trial, data, n_epochs=10):
 
 def study_early_stop(study, trial):
     # Stop if no improvement in the last N trials
-    N = 30
+    N = 100
     threshold = 0.001
 
     if len(study.trials) < N:
